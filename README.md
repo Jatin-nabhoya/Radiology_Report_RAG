@@ -82,8 +82,8 @@ GitHub for code, Hugging Face for data and checkpoints, Kaggle (T4 GPU) for comp
 | --- | --- | --- |
 | 00 | Smoke test: LLaVA-Med loads in 4-bit on a T4 and generates | Done (4.3 GB GPU, 13.5 s per report) |
 | 01 | Data prep and split | Done (3,199 studies) |
-| 02 | BioViL-T embeddings + FAISS index | Next |
-| 03 | Neighbour lists | |
+| 02 | BioViL-T embeddings + FAISS index | Done (3,199 × 128; index of 2,239) |
+| 03 | Neighbour lists + RAG pipeline demo | Done (A vs C on 100 test studies: BLEU-4 0.020 → 0.073) |
 | 04 | Evaluation script | |
 | 05 | Zero-shot runs: A, C, R | |
 | 06 | Fine-tune no-RAG adapter | |
