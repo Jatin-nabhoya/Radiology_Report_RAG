@@ -6,8 +6,8 @@ One Kaggle notebook per step. Each one reads its inputs from Hugging Face and wr
 | --- | --- | --- | --- | --- | --- |
 | 00 | `00_smoke_test.ipynb` | T4 | 1 X-ray | none | Done |
 | 01 | `01_data_prep.ipynb` | None | IU X-Ray CSVs | `iu_xray_clean.csv` | Done |
-| 02 | `02_build_index.ipynb` | T4 | Clean split, images | `retrieval/embeddings_all.npy`, `retrieval/faiss_train.index`, `retrieval/index_ids.csv` | Next |
-| 03 | `03_neighbours.ipynb` | None | Embeddings, index | `retrieval/neighbours.json` | |
+| 02 | `02-build-index.ipynb` | T4 | Clean split, images | `retrieval/embeddings_all.npy`, `retrieval/faiss_train.index`, `retrieval/index_ids.csv` | Done |
+| 03 | `03-rag-pipeline.ipynb` | T4 | Embeddings, index, split | `retrieval/neighbours.json`, `predictions/preds_A_C_n100.csv` | Done |
 | 04 | `04_eval_metrics.ipynb` | None | Predictions CSV | `metrics/metrics_<condition>.json` | |
 | 05 | `05_zero_shot.ipynb` | T4 | Split, neighbours | `predictions/preds_A.csv`, `preds_C.csv`, `preds_R.csv` | |
 | 06 | `06_train_norag.ipynb` | T4 | Train split | adapter `llavamed_ft_norag` | |
