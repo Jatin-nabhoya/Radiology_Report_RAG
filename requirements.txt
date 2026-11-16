@@ -1,0 +1,16 @@
+# Kaggle already provides torch, transformers, pandas, numpy, scikit-learn and huggingface_hub.
+# Install these on top (versions as used on Kaggle, Python 3.13, torch 2.11, Nov 2026).
+
+bitsandbytes          # 4-bit loading of LLaVA-Med
+peft                  # QLoRA adapters
+faiss-cpu             # retrieval index
+hi-ml-multimodal      # BioViL-T image encoder (install with --no-deps)
+pydicom
+SimpleITK
+open_clip_torch       # BiomedCLIP fallback encoder
+
+# Evaluation
+radgraph
+f1chexbert
+pycocoevalcap
+bert-score
